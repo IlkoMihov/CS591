@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    The people currently in space are:
+  </h1>
+</div>
+
+<div>
+
+
+  <ul>
+  <li *ngFor="let contact of contacts">
+    <label (click)="selectContact(contact)">{{contact.name}} on craft: {{contact.craft}}</label>
+  </li>
+  </ul>
+
+</div>
+
