@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<h2>The people currently in space are: </h2>
+
+<input #userInput>
+<button (click)="onClick(userInput.value)"> POST </button>
+
+<p *ngIf="message"> The body you sent contains: {{message}}</p>
+<ul *ngIf="apiResponse">
+  <h1> The human beings currently in space are:</h1>
+  <li *ngFor="let person of apiResponse"><strong>{{person.name}} on craft {{person.craft}} </strong></li>
+</ul>
