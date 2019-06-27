@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>International Space Station (ISS)</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>The humans that are currently in space are: </h1>
+    <ul>
+      <% people.forEach(function(person){ %>
+        <li> <%= person.name%> </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
